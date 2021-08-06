@@ -31,7 +31,7 @@ Contract適合検証テストがパスし、mvnがSUCCESSし、`.m2` にスタ�
 
 
 
-##Consumer側
+## Consumer側
 ### スタブを起動
 冒頭で示したよう本サンプルでは、スタブサーバは別PJのdemo-cdc-stubに切り出し、独立したプロセスとして動くようにしている。
 
@@ -56,6 +56,7 @@ http://localhost:8083/producer
 Consumerの通信向き先について、`src/test/resources/applciation.properties`でスタブのURL、`http://localhost:8083/producer`に向けている。）
 
 スタブが起動していることで、`DemoCdcApplicationTests`の疎通テストが成功することを確認。［図の⑤］
+
 また、スタブサーバにもHTTPリクエストが届き、応答したことを示すログが出力されるので、合わせて確認する。［図の⑥］
 
 
