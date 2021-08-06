@@ -1,0 +1,51 @@
+description: Sample contract
+name: id0contract
+request:
+  url: /producer
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    id: 0
+response:
+  status: 200
+  headers:
+    Content-Type: application/json
+  body:
+    id: 0
+    lastName: Toyosu
+    firstName: Taro
+---
+name: id1contract
+request:
+  url: /producer
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    id: 1
+response:
+  status: 200
+  headers:
+    Content-Type: application/json
+  body:
+    id: 1
+    lastName: Tsukishima
+    firstName: Jiro
+---
+name: id2contract
+request:
+  url: /producer
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    id: 2
+response:
+  status: 200
+  headers:
+    Content-Type: application/json
+  body:
+    id: 2
+    lastName: Shintomicho
+    firstName: Saburo
